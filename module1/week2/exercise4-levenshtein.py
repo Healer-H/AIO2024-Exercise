@@ -2,7 +2,7 @@ def calc_levenshtein_distance(str1, str2):
     m = len(str1)
     n = len(str2)
 
-    dp = [[0 for j in range(n+1)] for i in range(m+1)]
+    dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
 
     for i in range(m+1):
         dp[i][0] = i
